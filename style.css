@@ -15,14 +15,19 @@ body {
     color: #000000;
 }
 
-/* Cabeçalho com fundo preto */
+@media (prefers-color-scheme: dark) {
+    body {
+      background-color: white !important;
+      color: black !important;
+    }
+
 .site-header {
     display: flex;
     align-items: center;
     padding: 0 1rem;
     height: 70px; /* altura fixa */
-    background-color: #da4f7dfd;
-    color: white;
+    background-color: #da4f7dfd !important;
+    color: white !important;
     gap: 1rem;
 }
 
