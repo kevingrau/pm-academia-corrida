@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho com fundo preto */
+.site-header {
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    height: 70px; /* altura fixa */
+    background-color: #da4f7dfd;
+    color: white;
+    gap: 1rem;
+}
+
+.logo {
+    height: 100%;         /* altura total do header */
+    width: auto;          /* largura proporcional */
+    max-height: 60px;     /* limite superior da logo */
+    object-fit: contain;
+}
+
+.site-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.container {
+    padding: 2rem;
+    max-width: 960px;
+    margin: auto;
+}
+
+.main-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    margin: 1rem 0;
+}
+
+
+.intro-text,
+.details-text {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+.button {
+    display: inline-block;
+    background-color: #009688;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #00796b;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .intro-text,
+    .details-text {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .site-title {
+        font-size: 1.2rem;
+    }
+
+    .button {
+        width: 100%;
+        text-align: center;
+        padding: 1rem;
+        font-size: 1rem;
+    }
+}
+/* ... (mantém o CSS anterior acima disso) ... */
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Grid de eventos */
+.event-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.event-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.event-card h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
