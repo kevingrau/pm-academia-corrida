@@ -6,9 +6,13 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f8ff;
-    color: #333;
+    background-color: #da4f7dfd;
+    color: #ffffff;
     line-height: 1.6;
+}
+
+.title-run {
+    color: #000000;
 }
 
 /* Cabeçalho com fundo preto */
